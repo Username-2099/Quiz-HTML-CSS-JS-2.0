@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type=" image/x-icon" href="./assets/imgs/favicon.ico">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Quiz de HTML, CSS e JS</title>
+</head>
+<body>
+    <!-- ==================== CABEÇALHO ==================== -->
+    <header class="quiz-header">
+        <h1>
+            Quiz de 
+            <span class="text-html">HTML</span>,
+            <span class="text-css">CSS</span> e
+            <span class="text-js">JavaScript</span>
+        </h1>
+    </header>
+
+    <!-- ==================== CONTAINER ==================== -->
+    <main>
+        <section class="container">
+            <!-- INÍCIO DO QUIZ -->
+            <div id="quiz-form">
+                <h1>Bem-vindos ao Quiz!</h1>
+                <img src="./assets/imgs/html-css-js.png" alt="HTML CSS e JS">
+                <br><br>
+                <h2>
+                    Será que você manda bem nas tecnologias da web?🤔<br>
+                    Teste seus conhecimentos e descubra o quanto você sabe sobre HTML, CSS e JavaScript!
+                </h2>
+                <br><br>
+                <h3>Digite o seu nome e comece o desafio!🧠</h3>
+                <br><br>
+
+                <label for="username">Digite seu nome:</label>
+                <input type="text" id="username" />
+                <button onclick="StartQuiz()">Iniciar Quiz</button>
+            </div>
+    
+            <!-- ANDAMENTO DO QUIZ -->
+            <div id="quiz-container" class="hidden"></div>
+    
+            <!-- RESULTADO DO QUIZ -->
+            <div id="result-container" class="hidden">
+                <h1>Resultado</h1>
+                <br>
+                <p id="score"></p>
+                <p id="message"></p>
+                <canvas id="chart" width="600" height="600"></canvas>
+                <a href="./index.html">
+                    <button>
+                    Tentar novamente
+                    </button>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="quiz-footer">
+        <p>2025 - Desenvolvido por Pablo Silva</p>
+    </footer>
+
+    <script src="./assets/scripts/script.js"></script>
+
+</body>
+</html>
