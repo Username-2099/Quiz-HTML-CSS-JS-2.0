@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Recursive:wght@300..1000&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 120px;
+    font-family: 'Google Sans Code';
+    background: #1f010c;
+}
+
+/* ==================== CABEÇALHO ==================== */
+.quiz-header {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 80px; 
+
+    margin-inline: auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    background-color: #24020f;
+    color: #f0f0f0;
+    font-size: 20px;
+}
+
+.text-html {
+    color: #e34e26;
+}
+
+.text-css {
+    color: #264de4;
+}
+
+.text-js {
+    color: #f7df1e;
+}
+/* ================================================= */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: auto;
+    max-width: 600px;
+    background-color: #47041d;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #f0f0f0;
+}
+ 
+#quiz-form img {
+    width: 600px;
+    height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #e30b5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #b60848;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 40px;
+
+    background-color: #3d0118;
+    text-align: center;
+    color: #f0f0f0;
+    font-size: 15px;
+}
+
+.question h2 {
+    margin-bottom: 10px;
+    color: #f0f0f0;
+    white-space: pre-wrap;
+}
+
+.question p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.question button {
+    display: block;
+    width: 60%;
+    margin: 8px auto;
+    text-align: left;
+}
+
+@media (max-width: 750px) {
+    .container {
+        max-width: 350px;
+        padding: 15px;
+    }
+    #quiz-form img {
+        width: 300px;
+    }
+    footer {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .question h2 {
+        font-size: 16px;
+    }
+    button {
+        width: 60%;
+        font-size: 1rem;
+    }
+
+    input {
+        width: 60%;
+        font-size: 1rem;
+    }
+}
